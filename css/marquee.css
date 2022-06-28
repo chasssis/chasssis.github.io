@@ -1,0 +1,31 @@
+@font-face {
+  font-family: courier_regular;
+  src: url('../fonts/Consolas.ttf');
+}
+
+.marquee-container {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center;
+  color: white;
+}
+
+#marquee {
+  font-family: consolas, sans-serif !important;
+  width: 420px;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: -4.5px;
+  font-size: 15px;
+  color: white;
+}
+
+pre {
+  font-family: consolas, sans-serif !important;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}

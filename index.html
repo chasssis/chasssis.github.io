@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html onclick="play()" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/glitch.css">
+    <link rel="stylesheet" type="text/css" href="css/marquee.css">
+    <audio src="media/music.mp3"></audio>
+    <title>lyoni.beauty</title>
+    <style type="text/css">
+      body {
+          cursor: url("cursor.gif"), auto;
+      }
+    </style>
+      <style type="text/css">
+        a {
+            cursor: url("cursor2.gif"), default;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      </style>
+  </head>
+  <body>
+  	 <audio id="audio" loop>
+        <source src="media/music.mp3" type="audio/mp3">
+     </audio>
+    <div id="app">
+      <div id="wrapper">
+        <h1 class="glitch" data-text="lyoni">lyoni</h1>
+      </div>
+    </div>
+    <div class="marquee-container">
+      <pre>|<div id="marquee" class="marquee"></div>|</pre>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/music.js"></script>
+    <script>
+  		var audio = document.getElementById("audio");
+ 	 	audio.volume = 0.1;
+	</script>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
