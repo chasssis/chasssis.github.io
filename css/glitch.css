@@ -26,7 +26,7 @@ h1 {
   text-align: center;
 }
 .sub {
-  color: #Ff9500;
+  color: #000000;
   letter-spacing: 1em;
 }
 /* Our mixin positions a copy of our text directly on our existing text, while also setting content to the appropriate text set in the data-text attribute. */
@@ -46,7 +46,7 @@ h1 {
   width: 100%;
   height: 100%;
   left: 2px;
-  text-shadow: -2px 0 #ff00ff;
+  text-shadow: -2px 0 #00ff22;
   /* Creates an initial clip for our glitch. This works in a typical top,right,bottom,left fashion and creates a mask to only show a certain part of the glitch at a time. */
   clip: rect(44px, 450px, 56px, 0);
   /* Runs our glitch-anim defined below to run in a 5s loop, infinitely, with an alternating animation to keep things fresh. */
@@ -60,7 +60,7 @@ h1 {
   width: 100%;
   height: 100%;
   left: -2px;
-  text-shadow: -2px 0 #000000, 2px 2px #ff00ff;
+  text-shadow: -2px 0 #000000, 2px 2px #00ff15;
   animation: glitch-anim2 1s infinite linear alternate-reverse;
 }
 /* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/
