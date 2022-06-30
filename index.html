@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html onclick="play()" lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/glitch.css">
-    <link rel="stylesheet" type="text/css" href="css/marquee.css">
-    <audio src="media/music.mp3"></audio>
+    <audio src="media/rain_asmr.mp3"></audio>
     <title>chassis.site</title>
     <style type="text/css">
       body {
@@ -27,7 +29,7 @@
   </head>
   <body>
   	 <audio id="audio" loop>
-        <source src="media/music.mp3" type="audio/mp3">
+        <source src="media/rain_asmr.mp3" type="audio/mp3">
      </audio>
     <div id="app">
       <div id="wrapper">
@@ -38,9 +40,6 @@
       <pre>|<div id="marquee" class="marquee"></div>|</pre>
     </div>
 
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.marquee.min.js"></script>
-    <script type="text/javascript" src="js/slideshow.js"></script>
     <script type="text/javascript" src="js/music.js"></script>
     <script>
   		var audio = document.getElementById("audio");
