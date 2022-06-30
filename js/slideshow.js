@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var links = [
 
-  for (var i in links) {
+  for (var i in links)  {
     var link = links[i];
 
     $('#marquee').append('<a href="' + link.link + '" target="_BLANK">' + link.name + '</a>');
