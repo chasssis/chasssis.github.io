@@ -4,7 +4,7 @@ body,
 h1 {
   padding: 0;
   margin: 0;
-  font-family: 'Forum', cursive;
+  font-family: 'Forum';
 }
 #app {
   background: #0a0a0a;
