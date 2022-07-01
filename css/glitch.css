@@ -19,6 +19,7 @@ h1 {
 }
 #wrapper {
   text-align: center;
+  text-align: 10px;
 }
 .sub {
   color: #00ff00;
@@ -29,6 +30,7 @@ h1 {
   position: relative;
   color: white;
   font-size: 4em;
+  font-weight: 500;
   letter-spacing: 0.5em;
   /* Animation provies a slight random skew. Check bottom of doc for more information on how to random skew. */
   animation: glitch-skew 3s infinite linear alternate-reverse;
