@@ -56,7 +56,7 @@ h1 {
   width: 100%;
   height: 100%;
   left: -2px;
-  text-shadow: -2px 0 black, 2px 2px #00ff00
+  text-shadow: -2px 0 rgb(7, 7, 7), 2px 2px #00ff00
   ;
   animation: glitch-anim2 3s infinite linear alternate-reverse;
 }
@@ -113,7 +113,7 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a:hover {
-    background-color: rgba(168, 168, 142, 0.3);
+    background-color: rgba(168, 166, 142, 0.3);
 }
 /* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/
 @keyframes glitch-anim {
