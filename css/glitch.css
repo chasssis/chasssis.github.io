@@ -113,7 +113,7 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a:hover {
-    background-color: grey;
+    background-color: rgba(168, 168, 142, 0.3);
 }
 /* Creates an animation with 20 steaps. For each step, it calculates a percentage for the specific step. It then generates a random clip box to be used for the random glitch effect. Also adds a very subtle skew to change the 'thickness' of the glitch.*/
 @keyframes glitch-anim {
