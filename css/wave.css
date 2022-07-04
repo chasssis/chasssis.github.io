@@ -28,7 +28,7 @@ body {
 nav {
   width: 0%;
   height: 0px;
-  background-color: pink;
+  background-color: transparent;
 }
 nav ul {
     float: left; 
