@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/glitch.css">
+    <link rel="stylesheet" type="text/css" href="css/wave.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <audio src="media/rain.mp3"></audio>
     <title>chassis.site</title>
@@ -32,12 +32,35 @@
       </li>
     </ul>
   </nav>
+  <svg viewbox="0 0 100 20">
+    <defs>
+      <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="5%" stop-color="#326384"/>
+        <stop offset="95%" stop-color="#123752"/>
+      </linearGradient>
+      <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+          <animateTransform
+              attributeName="transform"
+              begin="0s"
+              dur="1.5s"
+              type="translate"
+              from="0,0"
+              to="40,0"
+              repeatCount="indefinite"/>
+        </path>
+      </pattern>
+    </defs>
+    <text text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)"  fill-opacity="0.6">CHASSIS</text>
+    <text text-anchor="middle" x="50" y="14" font-size="12" fill="url(#gradient)" fill-opacity="0.1">CHASSIS</text>
+  </svg>
+  />
   	 <audio id="audio" loop>
         <source src="media/rain.mp3" type="audio/mp3">
      </audio>
     <div id="app">
       <div id="wrapper">
-        <h1 class="glitch" data-text="chassis">chassis</h1>
+        <h1 class="wave" data-text="chassis">chassis</h1>
       </div>
     </div>
     <script type="text/javascript" src="js/music.js"></script>
