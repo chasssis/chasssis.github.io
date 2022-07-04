@@ -1,0 +1,54 @@
+nav {
+    width: 0%;
+    height: 0px;
+    background-color: transparent;
+  }
+  nav ul {
+      float: left; 
+  }
+  
+  nav ul li {
+      float: left;
+      list-style: none;
+      position: relative;
+  }
+  
+  nav ul li a {
+      display: block;
+      font-family: 'Forum';
+      color: rgb(0, 0, 0);
+      font-size: 50px;
+      padding: 10px 0px 5px 40px;
+      text-decoration: none;
+  }
+  
+  nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: none;
+  }
+  
+  nav ul li:hover ul {
+      display: block;
+      padding: 0px 0px 0px 4px;
+  }
+  
+  nav ul li ul li {
+      width: 99px;
+      height: 50px;
+      border-radius: 4px;
+  }
+  
+  nav ul li ul li a {
+      font-size: 40px;
+      list-style: decimal;
+      padding: 3px 30px 3px 60px;  
+    }
+  
+  nav ul li ul li a:hover {
+      background-color: rgba(184, 198, 218, 0.3);
+      padding: 3px 30px 3px 60px;
+      float: center;
+      width: 150px;
+      height: 50px;
+  }

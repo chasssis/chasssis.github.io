@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/wave.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <audio src="media/rain.mp3"></audio>
     <title>chassis.site</title>
     <style type="text/css">
@@ -54,20 +55,18 @@
     <text text-anchor="middle" x="50" y="14" font-size="12" fill="url(#wave)"  fill-opacity="0.6">CHASSIS</text>
     <text text-anchor="middle" x="50" y="14" font-size="12" fill="url(#gradient)" fill-opacity="0.1">CHASSIS</text>
   </svg>
-  />
   	 <audio id="audio" loop>
         <source src="media/rain.mp3" type="audio/mp3">
      </audio>
     <div id="app">
       <div id="wrapper">
-        <h1 class="wave" data-text="chassis">chassis</h1>
       </div>
     </div>
     <script type="text/javascript" src="js/music.js"></script>
     <script>
   		var audio = document.getElementById("audio");
  	 	audio.volume = 0.1;
-	</script>
+	  </script>
     <script>
       function play() {
         var audio = document.getElementById("audio");
