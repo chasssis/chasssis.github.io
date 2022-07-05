@@ -26,7 +26,7 @@ svg {
 }
 .bg-image {
   padding: 20em;
-  background-image: url(..\css\mountains.jpg);
+  background-image: url(..\images\mountains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
