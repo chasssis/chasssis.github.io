@@ -10,6 +10,9 @@ h1 {
 }
 body,html{margin:0;padding:0;height:100%;}
 body {
+  background-image: url("mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Cabin Condensed', sans-serif;
   display:flex;
   flex-direction:column;
@@ -20,6 +23,13 @@ svg {
   font-weight:bold;
   max-width:600px;
   height: 100%;
+}
+.bg-image {
+  padding: 20em;
+  background-image: url(..\css\mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*---------------------------------------/*
@@ -56,7 +66,7 @@ nav ul li ul{
   display: none;
   position: absolute;
   padding: 0px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 5px 10px; /* spacing between hovering overlay and full outline */
   border-radius: 0px 0px 10px 10px;
 }
