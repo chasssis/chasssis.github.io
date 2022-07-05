@@ -24,13 +24,7 @@ svg {
   max-width:600px;
   height: 100%;
 }
-.bg-image {
-  padding: 20em;
-  background-image: url(..\images\mountains.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
+
 
 /*---------------------------------------/*
 
