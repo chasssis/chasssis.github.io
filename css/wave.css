@@ -10,7 +10,7 @@ h1 {
 }
 body,html{margin:0;padding:0;height:100%;}
 body {
-  background-image: url("mountains.jpg");
+  background-image: url("pixels.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Cabin Condensed', sans-serif;
