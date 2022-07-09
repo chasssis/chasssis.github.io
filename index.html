@@ -24,7 +24,7 @@
       </li>
     </ul>
   </nav>
-  <svg viewbox="0 0 100 20" name="viewbox">
+  <svg viewbox="0 0 100 20">
     <defs>
       <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
         <stop offset="5%" stop-color="#326384"/>
@@ -52,12 +52,12 @@
      </audio>
     <script type="text/javascript" src="js/music.js"></script>
     <script>
-  		var audio = document.getElementById("audio");
- 	 	audio.volume = 0.05;
+  		var audio = document.getElementById("audio").loop = true;
+ 	 	audio.volume = 0.1;
 	  </script>
     <script>
       function play() {
-        var audio = document.getElementById("audio");
+        var audio = document.getElementById("audio").loop = true;
         audio.play();
       }
     </script>
