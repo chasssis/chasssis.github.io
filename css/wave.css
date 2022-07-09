@@ -1,30 +1,73 @@
 @import url('css.css');
-@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Forum);
 html,
 body,
 h1 {
   padding: 0;
   margin: 0;
-  font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Cabin Montserrat', sans-serif;
 }
 body,html{margin:0;padding:0;height:100%;}
 body {
-  background-image: url("pixels.jpg");
+  background-color: #262f38;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Cabin Condensed', sans-serif;
+  font-family: Arial;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
 }
-svg {
-  font-weight:bold;
-  max-width:600px;
+.container {
+  display: flex;
+/*   border:1px solid red; */
   height: 100%;
+  align-items: center;
+}
+svg {
+  display: block;
+  font: 1vw 'Montserrat';
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 0.5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+.text-copy:nth-child(1){
+	stroke: #be3798;
+	animation-delay: -1;
 }
 
+.text-copy:nth-child(2){
+	stroke: #ff006a;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #0081bd;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #dfc656;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #b6b6b6;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	70% {stroke-dashoffset: -45%;}
+}
 
 /*---------------------------------------/*
 
