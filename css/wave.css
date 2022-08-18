@@ -10,7 +10,8 @@ h1 {
 }
 body,html{margin:0;padding:0;height:100%;}
 body {
-  background-color: #262f38;
+  background-image: url(art-taiga.gif);
+  background-color: #cccccc;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial;
