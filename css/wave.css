@@ -10,9 +10,12 @@ h1 {
 }
 body,html{margin:0;padding:0;height:100%;}
 body {
+<<<<<<< HEAD
   background-image: url('art-taiga.gif');
+=======
   background-image: url(art-taiga.gif);
   background-color: #cccccc;
+>>>>>>> parent of 983e63f (bh)
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Arial;
