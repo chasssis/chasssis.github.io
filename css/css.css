@@ -28,7 +28,7 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #040c1c;
+  background-color: #030914;
   font-family: 'Fugaz One', cursive;
 }
 .logo{
@@ -76,7 +76,7 @@ nav{
     height: 92vh;
     width: 15em;
     top: 8vh;
-    background-color: #040c1c;
+    background-color: #030914;
     display: flex;
     flex-direction: column;
     align-items: center;
