@@ -1,11 +1,8 @@
 @import url('css.css');
-html,
-body,
-h1 {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Cabin Montserrat', sans-serif;
 }
 #app {
   background: #0a0a0a;
@@ -13,7 +10,7 @@ h1 {
   width: 100%;
   margin: 0;
   padding: 0;
-  display: flex;
+  display:inline-flex ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -25,25 +22,24 @@ h1 {
 }
 /*--------------------------------------nav bar*/
 nav{
+  display: flex;
   position: fixed;
   width: 100%;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: transparent;
-  color: rgb(190, 190, 190);
+  background-color: #040c1c;
   font-family: 'Fugaz One', cursive;
 }
 .logo{
   color: rgb(190, 190, 190);
-  letter-spacing: 4px;
-  font-size: 30px;
+  letter-spacing: 3px;
+  font-size: 20x;  
 }
 .nav-links{
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  width: 30%;
 }
 .nav-links li{
   list-style: none;
@@ -52,6 +48,67 @@ nav{
   color: rgb(190, 190, 190);
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 18px;
+  font-size: 14px;
+}
+.burger{
+  display: none;
+  cursor: pointer;
+}
+.burger div{
+  width: 30px;
+  height: 3px;
+  background-color: rgb(190, 190, 190);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024px){
+  .nav-links{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    width: 15em;
+    top: 8vh;
+    background-color: #040c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in;
+  }
+  .burger{
+    display: block;
+  }
+}
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 /*--------------------------------------nav bar*/

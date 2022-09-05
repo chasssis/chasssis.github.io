@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibale" content="ie-edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
@@ -18,27 +19,28 @@
   </head>
   <body>
     <!-- nav-->
-    <nav>
-      <div class="logo">
-        <h4>//chassis.site/</h4>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="https://e.rip/chassis" target="_blank">Bio Page</a>
-        </li>
-        <li>
-          <a href="#">Projects</a>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <div class="logo">
+          <h4>//chassis.site/</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="https://e.rip/chassis/" target="_blank">Bio Page</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     <!-- nav-->
   	 <audio id="audio" loop>
         <source src="media/music.mp3" type="audio/mp3">
      </audio>
     <div id="app">
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/music.js"></script>
     <script>/*music*/
   		var audio = document.getElementById("audio");
