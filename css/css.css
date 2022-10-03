@@ -1,4 +1,10 @@
 @import url('css.css');
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --white: rgb(190, 190, 190);
+}
 * {
   padding: 0;
   margin: 0;
@@ -15,11 +21,31 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
-    url('../images/ball.gif');
+    url('../images/37P86Mcp.png');
   background-size: auto;
   background-position: center;
   z-index: 1;
 }
+/*--------------------------------------lines*/
+hr.left {
+  display: block;
+  width: 30%;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid rgb(190, 190, 190);
+  margin: 3em 0;
+  padding: 0;
+}
+hr.right {
+  display: block;
+  width: 30%;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid rgb(190, 190, 190);
+  margin: 3em 0;
+  padding: 0;
+}
+/*--------------------------------------lines*/
 /*--------------------------------------nav bar*/
 nav{
   display: flex;
@@ -28,18 +54,12 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #030914;
   font-family: 'Fugaz One', cursive;
-}
-.logo{
-  color: rgb(190, 190, 190);
-  letter-spacing: 3px;
-  font-size: 25px;  
 }
 .nav-links{
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 50%;
 }
 .nav-links li{
   list-style: none;
@@ -48,7 +68,7 @@ nav{
   color: rgb(190, 190, 190);
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 20px;
 }
 .burger{
   display: none;
@@ -61,22 +81,21 @@ nav{
   margin: 5px;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1230px){
   .nav-links{
-    width: 60%;
+    width: 70%;
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 854px){
   body{
     overflow-x: hidden;
   }
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 50vh;
+    height: 30vh;
     width: 15em;
     top: 8vh;
-    background-color: #030914;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,6 +104,15 @@ nav{
   }
   .burger{
     display: block;
+    padding: 0px 80px 0px 500px;
+  }
+  hr.left{
+    height: 0px;
+    width: 0%;
+  }
+  hr.right{
+    height: 0px;
+    width: 0%;
   }
 }
 .nav-active{
@@ -112,3 +140,87 @@ nav{
   transform: rotate(45deg) translate(-5px, -6px);
 }
 /*--------------------------------------nav bar*/
+/*--------------------------------------sparkle*/
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(2em, 2vw, 4em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 > .magic {
+    display: inline-block;
+    position: relative;
+  }
+  
+  h1 > .magic > .magic-star {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+  }
+  
+  h1 > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  h1 > .magic > .magic-star > svg > path {
+    fill: var(--white);
+  }
+  
+  h1 > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 64px;
+  }
+/*--------------------------------------sparkle*/
