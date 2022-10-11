@@ -29,14 +29,14 @@
 h2{
   color: rgb(190, 190, 190);
   font-family: "Rubik", sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   margin-left: 14rem;
   margin-right: auto;
 }
 /*--------------------------------------lines*/
 hr.left {
   display: block;
-  width: 30%;
+  width: 20%;
   height: 1px;
   border: 0;
   border-top: 2px solid rgb(190, 190, 190);
@@ -45,7 +45,7 @@ hr.left {
 }
 hr.right {
   display: block;
-  width: 30%;
+  width: 20%;
   height: 1px;
   border: 0;
   border-top: 2px solid rgb(190, 190, 190);
@@ -93,28 +93,30 @@ nav{
     width: 70%;
   }
 }
-@media screen and (max-width: 854px){
+@media screen and (max-width: 700px){
   body{
     overflow-x: hidden;
   }
   .nav-links{
     position: absolute;
     right: 0px;
-    height: 33vh;
-    width: 15em;
+    height: 15vh;
+    width: 100%;
     top: 8vh;
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
+    padding: 0px 10px 0px 10px;
     transform: translateX(100%);
     transition: transform 0.4s ease-in;
-    background-color: grey;
+    background-color: transparent;
     z-index: 1;
   }
   .burger{
     display: block;
     margin-left: auto;
     margin-right: 4rem;
+    z-index: 1;
   }
   hr.left{
     height: 0px;
