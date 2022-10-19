@@ -61,7 +61,6 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  font-family: 'Fugaz One', cursive;
 }
 .nav-links{
   display: flex;
