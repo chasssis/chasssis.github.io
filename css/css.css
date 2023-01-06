@@ -21,136 +21,58 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(10, 10, 10, 0.5), rgba(0, 0, 0, 0.5)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px),
-    url('../images/37P86Mcp.png');
+    url('../images/background.jpg');
   background-size: auto;
   background-position: center;
   z-index: 1;
 }
-h2{
-  color: rgb(190, 190, 190);
+#links{
   font-family: "Rubik", sans-serif;
-  font-size: 50px;
-  margin-left: 14rem;
-  margin-right: auto;
-}
-/*--------------------------------------lines*/
-hr.left {
-  display: block;
-  width: 30%;
-  height: 1px;
-  border: 0;
-  border-top: 2px solid rgb(190, 190, 190);
-  margin: 3em 0;
-  padding: 0;
-}
-hr.right {
-  display: block;
-  width: 30%;
-  height: 1px;
-  border: 0;
-  border-top: 2px solid rgb(190, 190, 190);
-  margin: 3em 0;
-  padding: 0;
-}
-/*--------------------------------------lines*/
-/*--------------------------------------nav bar*/
-nav{
+  font-size: clamp(1.5em, 2vw, 4em);
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1em;
   display: flex;
-  position: fixed;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
 }
-.nav-links{
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
 }
-.nav-links li{
-  list-style: none;
-}
-.nav-links a{
-  color: rgb(190, 190, 190);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 30px;
-}
-.burger{
-  display: none;
-  cursor: pointer;
-}
-.burger div{
-  width: 30px;
-  height: 3px;
-  background-color: rgb(190, 190, 190);
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-@media screen and (max-width: 1230px){
-  .nav-links{
-    width: 70%;
-  }
-}
-@media screen and (max-width: 700px){
-  body{
-    overflow-x: hidden;
-  }
-  .nav-links{
-    position: absolute;
-    right: 0px;
-    height: 15vh;
-    width: 100%;
-    top: 8vh;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in;
-    background-color: transparent;
-    z-index: 1;
-  }
-  .burger{
-    display: block;
-    margin-left: auto;
-    margin-right: 4rem;
-    z-index: 1;
-  }
-  hr.left{
-    height: 0px;
-    width: 0%;
-  }
-  hr.right{
-    height: 0px;
-    width: 0%;
-  }
-}
-.nav-active{
-  transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
+img[title]::after {
+  content: attr(title);
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  visibility: hidden;
   opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
 }
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px, -6px);
+img[title]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.3s linear;
 }
-/*--------------------------------------nav bar*/
+.tele{
+  box-shadow: 0 0 20px white;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.dc{
+  box-shadow: 0 0 20px white;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-left: 15px;
+
+}
 /*--------------------------------------sparkle*/
 @keyframes background-pan {
   from {
@@ -181,12 +103,20 @@ nav{
 }
 h1 {
   color: white;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: clamp(2em, 2vw, 4em);
-  font-weight: 400;
+  font-weight: 900;
+  width: 100%;
   margin: 0px;
   padding: 20px;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px white;
+  /*text-shadow: 0 0 13px white;*/
 }
 h1 > .magic {
   display: inline-block;
