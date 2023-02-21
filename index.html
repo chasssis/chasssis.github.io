@@ -2,9 +2,6 @@
 <html onclick="play()" lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatibale" content="ie-edge">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -20,32 +17,85 @@
       </style>
   </head>
   <body>
-  	 <audio id="audio" loop>
-        <source src="media/music.mp3" type="audio/mp3">
-     </audio>
+    <pre id="header">                         
+            88                                             88             
+            88                                             ""             
+            88                                                            
+ ,adPPYba,  88,dPPYba,   ,adPPYYba,  ,adPPYba,  ,adPPYba,  88  ,adPPYba,  
+a8"     ""  88P'    "8a  ""     `Y8  I8[    ""  I8[    ""  88  I8[    ""  
+8b          88       88  ,adPPPPP88   `"Y8ba,    `"Y8ba,   88   `"Y8ba,   
+"8a,   ,aa  88       88  88,    ,88  aa    ]8I  aa    ]8I  88  aa    ]8I  
+ `"Ybbd8"'  88       88  `"8bbdP"Y8  `"YbbdP"'  `"YbbdP"'  88  `"YbbdP"'  
+    </pre>
     <div id="app">
-      <div class="text">
-        <h1>
-          <span class="magic">
-            <span class="magic-star">
-              <svg viewBox="0 0 512 512">
-              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
-              </svg>
-            </span>
-            <span class="magic-star">
-              <svg viewBox="0 0 512 512">
-              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
-              </svg>
-            </span>
-            <span class="magic-star">
-              <svg viewBox="0 0 512 512">
-              <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
-              </svg>
-            </span>
-            <span class="magic-text">chassis</span>
-          </span>
-        </h1>
-      </div>
+    <pre id= "card">
+      `!iXMON999999NNNNNNOOOOOOOOOOOOOOOddddddddddbbbbbbbZZZZZZZMMMMMMMMMMMMM55qqWWWWWGGGGGHHHHPPPPPP33333333aaaaKKKKKKKKKmmmmmmmmeeeeeeeeeeeessssssssssssssssssseeeeeeeeeemmmmmmmmmmmKKKKKKKKaa33a3333333Kj}r,      
+      _yQ@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####################################BBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBbv'   
+    `}#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB0^  
+    z@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBQQB#########QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB##) 
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#@#####################################BBBBBBBBBBBBBBBBBBBBBBBQQ##MYQQQQQQQQQQQ#QQQQQQQQQ#IVVVVVyBQQZVVVVVVEQQQQQQ#NUVx*^^^rxuINQQQQQQQQQ#5jyVVVVyBBBBBBBBBBBBBBB####g_
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQOy        LQQQQQQQQQi      v#Q#,      ZQQQ#U^`            rQQQQQQQQE"        }BBBBBBBBBBBBB######^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQBe\`   '8QQQQQQQK`     ^#QQM      ,#QQQ3-               GQQQQQQQQ_         .BBBBBBBBBBBB#######^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQ,^P5^  xQQQQQQM      ^#QQQx      xQQQQ      .K#QQQQQ#DU#QQQQQQQ_           VBBBBBBBBBB########^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQV  :eH:,#QQQQ0-     !BQQQB-      NQQQs      'K#QQQQQQQQQQQQQQB"     ][     _BBBBBBBBB#########^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQ#!   !axhQQQ#=     _gQQQQI      ~QQQQB`       .rk$#QQQQQQQQQ#;     =#M      BBBBBBBB##########^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@####################################BBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQZ     vZQQQv      EQQQQQ*      uQQQQQR>          -]DQQQQQQ#)     _BBB~     yBBBBBB###########^
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQ)     ;#Qk      \QQQQQB_      dQQQQQQQgV~'        `r#QQQQL     `qBBBk     _BBB##############*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBBQBQQQQQQQQQQQQQQQQQQQQQQ$`     ?N'     /#QQQQQI      =QQQQQQQQQQQ#MY_       rQQQw      \BBBBR-     eB###############*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQT      `     "BQQQQQQ*      wQQQQQQQQQQQQQQ#=      :#Qm`                  ~################*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQ#!          ,QQQQQQQQ.     `$QQQl:rjM90$$93)`     `GQ8`                    e###############*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@######################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQb`        -8QQQQQQQw      ^QQQ#"                _MQB:     'yKKKKKKKKr     *###############*
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#####################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQr       'dQQQQQQQQ~      UQQQg`             _vG#Q#/     `5QQQQQQQQQ$`     d##############*
+    @@@@@@@@@@@@@@@@@@@@@@@#B88ggg88gggg$$$$$$0$0000D$Q##############BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQBQQQQQQQQQQQQQBKmmmmmm$QQQQQQQQ#Pssssss#QQQQB$bjuixvxLV3RQQQQQQQsUUUUUdQQQQQQQQQQQMUUsss$##############*
+    @@@@@@@@@@@@@@@@@@@@@#G}|))))))vv)r******rr*/;~~==~vGB#########BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB#####################*
+    @@@@@@@@@@@@@@@@@@@@@e)))())))rrr?\r****r*>;~~=!!::::H#########BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB######################*
+    @@@@@@@@@@@@@@@@@@@@@y)))rrrrrr*****r)*/~~~=!!:::::::I########BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB########################*
+    @@@@@@@@@@@@@@@@@@@@#w\\?()))rrr*^^/;r===!!~=!!!=~~>~e#######BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB##########################*
+    @@@@@@@@@@@@@@@@@@@@#yrr******^*)^//;>==!!~:::!!==~~~U####B##BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBQBBBBBBBBBBBBBBBBBBBBB##########################*
+    @@@@@@@@@@@@@@@@@@@@#V****^^^/>~*==!!:::::=:!===~~>^/m####BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB###########################*
+    @@@@@@@@@@@@@@@@@@@##Vrrrr***^^/*!::::::!!^/^****rrrra###BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB##############################*
+    @@@@@@@@@@@@@@@@@@###u////~~==!!:>::::!!==~^;/^^^*****m#B#BBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB###############################*
+    @@@@@@@@@@@@@@@@#####T~~==!!::!=~=~~~*/^**r*^******r*K#B#BBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB################################*
+    @@@@@@@@@@@@@@#######u^>~~===~=!!==~^(*^^^**)?||\vvv\PBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB#################################*
+    @@@@@@@@@@@@@########Y::::::!!=~~~^**^rr***rrrrrrr))r3#BBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB##################################*
+    @@@@@@@@@@@@#########W!::!!==~~;^rr^****?|rrr)r)))))xEBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB####################################*
+    @@@@@@@@@@############$jLv||vvvi]xxxxx]]iiT}LLLLYTyP8BBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB#####################################*
+    @@@@@@@@@@######################################B#BBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB###################################@@@*
+    @@@@@@@@@#####################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB###################################@@@@*
+    @@@@@@#######################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB#####################################@@@@@*
+    @@@@@#####################################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB#####################################@@@@@@*
+    @@@@########################################BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB#################################@@@@@@@@@*
+    @@@#################]x*5####Dxvvvrs##Zvvv?(gBBPTBB0QBBBBBBBBBBBBI^|(?ZQQxx8QQQQQG/)))*}QQQZ//MQQQQQQQQQQQN^r))*\gQQH/r/dQQQ}*)))/aQQvLQQQQQQQQQQBBBBBBK^?|x$BBaYBB$QB#8]vvvr5##Pvvvv)E##################@@@@@@@@@@*
+    @@####################~w######BBB}*###BBB$-WBBc>BB!VBBBBBBBBBBQQ}^QQQQQQ:}QQQQQQ$M8QQ]^QQQe_O,jQQQQQQQQQQQq`IEDl_$QQy:d.3QQQdNQ8g"yQQ:VQQQQQQQQBBBBBBBBc:QBBBBBl!B#~y###BBBBwx######B!y#################@@@@@@@@@@*
+    @#####################~y####QIyyy;)##B$VVx.NBBc>BB:cBBBBBBBBQQQQY,cuy$QQ:}QQQQQQQQQgy:}QQR|'].rdQQQQQQQQQQ9rr))!_$Q$*-x`v9QQQQQOv:WQQ:VQQQQQQQBBBBBBBBBc-cVUQBBl!B#~yBBBBeyy^V##0wyyy_X###############@@@@@@@@@@@@*
+    ######################~y5v##o,PPPWQ#B#8PPV.bBBe;?).*QBBBBBBBQQQQRmmm,VQQ::rr**QQQQg=^dQQQx,hhI!vQQQQQQQQQQQQQQQw_$QU:IhU:YQQQQe_VgQQQ:!))~rQBBBBBBBBBBB0KaV`GBBU~?\.*B##BdGG?T##|*qqqO################@@@@@@@@@@@@*
+    ####################WH"?v:B#k,a3aaR#B$KKmy'5BBBBBB:cBBBBBQQQQQQIYoIh,VQQ:*oXV:QQQQ0_wQQQQ],jjj!vQQQQQQQQQQQQQQQL,$Qs:XXI:YQQQQV,gQQQQ:)hUr:QBBBBBBBBBBWYhmV`WBBBBB#~y##QH333vi##)*HHHGQ#############@@@@@@@@@@@@@@*
+    ####################jyyyyW##DyyyyyZBB9yVVVKQBBBBBB3RBBBBBQQQQQQ$mcuuw$QQKuuuueQQQQ8IRQQQQEVlllVOQQQQQQQQQQQQQQQhI8QgVuluyEQQQQ9eQQQQQKcccc3BBBBBBBBBBBQGyVy3BB#####5$##QjyywkQ##bwkkkz8############@@@@@@@@@@@@@@@*
+    ##################################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@*
+    ###################Qh#QMd3BDdad#BP3BBBBBBBBBBBBBBBBBBBQBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@*
+    ####################jB#BdKB#0VqQeZUBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@*
+    ###################Bl8ETq$BOg5jRHqT8BBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBB######################################@@@@@@@@@@@@@@@@@@@*
+    ###################QO$QOO9B8dOBBBBQBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBB#####################################@@@@@@@@@@@@@@@@@@@@@*
+    ###########################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQR]^>QQQOxxx\\QQQQQTvQQ!*xx_QQ=rxv_dQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@*
+    ##########################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQI~QQQ8MPPx^QQQ8Lr$QQ*)]]-QQ*?ix-ZQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB#B#################################@@@@@@@@@@@@@@@@@@@@@@@@@*
+    #########################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQI~MuQj:uluZQQ8x)gQQQQQQQ!QQQQQg:ZQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB##################################@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ########################BBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ0Iv:v^Qy:IXXZQ8vv8QQQQQQQD,QQQQQd_bQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ####################BB##BBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ0hIIIMQRIIIIZQ8M8QQQQQQQQDKQQQQQDPQQQBQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB#####################################@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ####################BBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ####################BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    #################BBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    #################BBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ##############BBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ##############BBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ##############BBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ###########BBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB#####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    ###########BBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*
+    B########BBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBB###################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#,
+    V#######BBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@i 
+    `LQ###BBBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBB####################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@B?  
+      ,c$BBBBBBBBBBBBBBBBBBBBBBBBBBBQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQBBBBBBBBBBBBBBBBBBBBB##################################@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@Qc-   
+        `!xyaMZZZZZZZZZMMMMMMMMMMMMMMMMWWWWWWWWWWWWWGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGWGGWWWWWWWWWq555MMMMMMMMMMMMMMMMZZZZZZZZbbbddddddddddOOOOOOONNNNNNN999RRREEEEEEEDDDDDD0000000000$$$$$$$$$$$$$gggggg0Zh]!      
+    </pre>
       <div id="links">
         <a href="https://t.me/chassis_gh" class="tele" target="_blank">
           <img src="images/telegram.png" alt="telegram" title="telegram">
@@ -56,16 +106,5 @@
       </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/music.js"></script>
-    <script>/*music*/
-  		var audio = document.getElementById("audio");
- 	 	audio.volume = 0.1;
-	</script>
-    <script>/*music*/
-      function play() {
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-    </script>
   </body>
 </html>
