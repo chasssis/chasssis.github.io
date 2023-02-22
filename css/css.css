@@ -99,4 +99,7 @@ pre{
   #card{
     font-size: 1px;
   }
+  body{
+    overflow:scroll;
+  }
 }
