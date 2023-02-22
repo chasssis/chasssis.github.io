@@ -56,14 +56,14 @@ img[title]:hover::after {
 .tele{
   box-shadow: 0 0 20px rgb(0, 0, 0);
   padding: 2px;
-  background-color: rgba(165, 0, 165, 0.2);
+  background-color: purple;
   border-radius: 50%;
   margin-right: 15px;
 }
 .dc{
   box-shadow: 0 0 20px rgb(0, 0, 0);
   padding: 2px;
-  background-color: rgba(165, 0, 165, 0.2);
+  background-color: purple;
   border-radius: 50%;
   margin-left: 15px;
 
@@ -84,6 +84,6 @@ pre{
   padding-top: 15px;
 }
 #card{
-  color: darkblue;
+  color: purple;
   font-size: 2px;
 }
