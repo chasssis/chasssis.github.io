@@ -12,7 +12,7 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  display:inline-flex ;
+  display:flex ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -86,4 +86,17 @@ pre{
 #card{
   color: purple;
   font-size: 2px;
+}
+
+@media (max-width: 550px) {
+  #header {
+    font-size: 6px;
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  #card{
+    font-size: 1px;
+  }
 }
