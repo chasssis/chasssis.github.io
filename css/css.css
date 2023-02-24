@@ -34,7 +34,7 @@ img {
   display: inline-block;
   width: 100px;
   height: 100px;
-  padding: 4px;
+  padding: 3px;
 }
 img[title]::after {
   content: attr(title);
@@ -56,14 +56,14 @@ img[title]:hover::after {
 .tele{
   box-shadow: 0 0 20px rgb(0, 0, 0);
   padding: 2px;
-  background-color: purple;
+  background-color: rgba(128, 0, 128, 0.5);
   border-radius: 50%;
   margin-right: 15px;
 }
 .dc{
   box-shadow: 0 0 20px rgb(0, 0, 0);
   padding: 2px;
-  background-color: purple;
+  background-color: rgba(128, 0, 128, 0.5);
   border-radius: 50%;
   margin-left: 15px;
 
@@ -97,7 +97,7 @@ pre{
     height: 70px;
   }
   #card{
-    font-size: 1px;
+    font-size: 2px;
   }
   body{
     overflow:scroll;
