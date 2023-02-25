@@ -41,7 +41,6 @@ body{
   font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 }
 #app {
-  background: #213023;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -51,7 +50,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #000000;
+  background-image: linear-gradient(to right, #000000, #2c002c);
   background-size: auto;
   background-position: center;
   z-index: 1;
@@ -61,7 +60,7 @@ body{
   font-weight: 400;
   position: absolute;
   bottom: 0;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   display: flex;
 }
 img {
