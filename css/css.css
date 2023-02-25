@@ -58,7 +58,6 @@ body{
 }
 #links{
   font-family: "Rubik", sans-serif;
-  font-size: clamp(1.5em, 2vw, 4em);
   font-weight: 400;
   position: absolute;
   bottom: 0;
@@ -101,7 +100,6 @@ img[title]:hover::after {
   background-color: rgba(128, 0, 128, 0.5);
   border-radius: 50%;
   margin-left: 15px;
-
 }
 pre{
   position: absolute;
