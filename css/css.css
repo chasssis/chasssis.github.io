@@ -50,7 +50,6 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right, #000000, #2c002c);
   background-size: auto;
   background-position: center;
   z-index: 1;
