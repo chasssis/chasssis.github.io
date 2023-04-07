@@ -1,14 +1,4 @@
 @import url('css.css');
-:root {  
-  --pink: rgb(244, 143, 177);
-  --lblue: rgb(35, 182, 226);
-  --white: rgb(190, 190, 190);
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 #app {
   height: 100vh;
   width: 100%;
@@ -18,67 +8,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('../images/background.jpg');
+  background-color: black;
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
 }
-#links{
-  position: absolute;
-  display: flex;
-}
-img {
-  display: inline-block;
-  width: 400px;
-  height: 400px;
-  
-}
-.tele{
-  padding-right: 500px;
-  border-radius: 50%;
-}
-.dc{
-  padding-left: 500px;
-  border-radius: 50%;
-}
 h1 {
   font-family: 'Exo 2', sans-serif;
   font-size: clamp(2em, 2vw, 4em);
+  color: aquamarine;
   font-weight: 900;
   text-align: center;
   position: fixed;
-  top: 1%;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-h1 > .magic {
-  display: inline-block;
-  position: relative;
-}
-h1 > .magic > .magic-text {
-  animation: background-pan 0.5s linear infinite;
-  background: linear-gradient(
-    to right,
-    var(--pink),
-    var(--lblue),
-    var(--pink),
-    var(--lblue)
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-  font-size: 64px;
-}
-@keyframes background-pan {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 100% center;
-  }
 }
