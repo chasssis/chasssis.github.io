@@ -25,7 +25,7 @@ h1 {
   font-size: clamp(2em, 2vw, 4em);
   font-style: italic;
   color: aquamarine;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   font-weight: 900;
   text-align: center;
   position: fixed;
