@@ -13,16 +13,18 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background: url(../media/images/);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 1;
 }
 h1 {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo 2', sans-serif, italics;
   font-size: clamp(2em, 2vw, 4em);
+  font-style: italic;
   color: aquamarine;
+  background-color: black;
   font-weight: 900;
   text-align: center;
   position: fixed;
