@@ -1,38 +1,137 @@
 @import url('css.css');
-body, html {
-  height: 100%;
-  margin: 0;
+body{
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#enter {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  position: fixed;
+  text-align: center;
+  background-color: #000000;
+  transition: opacity 0.9s ease-in-out;
+}
+.begin {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: purple;
+  position: absolute;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+.begin1 {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: purple;
+  position: absolute;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 }
 #app {
+  position: relative;
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
-  display:inline-flex ;
+  display:flex ;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background-image: url(../media/1.jpg);
+  background-image: linear-gradient(to right, #000000, #2c002c);
   background-size: auto;
   background-position: center;
-  background-repeat: no-repeat;
   z-index: 1;
 }
-h1 {
-  font-family: 'Exo 2', sans-serif, italics;
-  font-size: clamp(2em, 2vw, 4em);
-  font-style: italic;
-  color: aquamarine;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-weight: 900;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+#links{
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2em;
   display: flex;
-  justify-content: center;
+}
+img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+}
+img[title]::after {
+  content: attr(title);
+  background: black;
+  color: rgb(0, 0, 0);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+img[title]:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.3s linear;
+}
+.tele{
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  padding: 2px;
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.dc{
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  padding: 2px;
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 50%;
+  margin-left: 15px;
+}
+pre{
+  position: absolute;
+  z-index: 2;
+}
+
+#header{
+  color: purple;
+  font-size: 12px;
+  margin: 0 auto;
+  left: 50%;
+  display: block;
+  text-align: center;
+  transform: translate(-50%, -0%);
+  padding-top: 15px;
+}
+#card{
+  color: purple;
+  font-size: 2px;
+}
+
+@media (max-width: 550px) {
+  #header {
+    font-size: 6px;
+  }
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  #card{
+    font-size: 2px;
+  }
+  body{
+    overflow:scroll;
+  }
 }
