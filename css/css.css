@@ -38,7 +38,7 @@ body {
   transform: rotate(45deg);
 
   .stripe {
-    background: #353535;
+    background: #ffffff;
     width: 600px;
     height: 3px;
     margin-bottom: 16px;
@@ -91,28 +91,32 @@ body {
 }
 h1 {
   color: #353535;
+  background-color: #eeeeeee0;
   font-size: 50px;
   font-weight: 500;
   text-align: center;
   position: fixed;
-  top: 1%;
+  top: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   left: 0;
   right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   z-index: 1;
-  opacity: 75%;
 }
 #footer {
   position: fixed;
-  bottom: 1%;
+  bottom: 0%;
   width: 100%;
-  padding: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 550;
   white-space: nowrap;
+  background-color: #eeeeeee0;
   z-index: 2;
 }
 #footer a{
