@@ -15,13 +15,6 @@ body {
   overflow: hidden;
   background-color: #eeeeee;
 }
-canvas {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
 .frame {
   position: absolute;
   top: 50%;
@@ -36,7 +29,6 @@ canvas {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  z-index: 50;
 }
 .stripes {
   position: relative;
@@ -46,7 +38,7 @@ canvas {
   transform: rotate(45deg);
 
   .stripe {
-    background: #dbdbdb;
+    background: #353535;
     width: 600px;
     height: 3px;
     margin-bottom: 16px;
@@ -98,33 +90,30 @@ canvas {
   }
 }
 h1 {
-  background-color: #eeeeeee0;
   color: #353535;
   font-size: 50px;
   font-weight: 500;
   text-align: center;
   position: fixed;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  top: 0;
+  top: 1%;
   left: 0;
   right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  z-index: 50;
+  z-index: 1;
+  opacity: 75%;
 }
 #footer {
   position: fixed;
-  bottom: 0;
+  bottom: 1%;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 550;
   white-space: nowrap;
-  z-index: 50;
-  background-color: #eeeeeee0;
+  z-index: 2;
 }
 #footer a{
   text-decoration: none;
