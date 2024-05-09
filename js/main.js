@@ -6,12 +6,13 @@ for (let i = 0; i < numberOfStripes; i++) {
     stripe.className = 'stripe';
     stripesContainer.appendChild(stripe);
 }
-//fuck this shit
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
 var shapes = [];
-var num = 150;
+var isMobile = window.innerWidth < 768;
+var num = isMobile ? 50 : 150;
 
 var staticXpos;
 var staticYpos;
@@ -26,11 +27,12 @@ var opt = {
 
 var w = canvas.width = window.innerWidth;
 var h = canvas.height = window.innerHeight;
+
 addEventListener('resize', function() {
   w = canvas.width = window.innerWidth;
   h = canvas.height = window.innerHeight;
 });
-//helper functions
+
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -117,6 +119,7 @@ function loop() {
 }
 
 function init() {
+  shapes = [];
   for (var i = 0; i < num; i++) {
     shapes.push(new createShapes());
   }

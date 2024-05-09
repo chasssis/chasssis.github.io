@@ -123,3 +123,40 @@ h1 {
   text-decoration: none;
   color: #353535;
 }
+@media (max-width: 768px) {
+  .frame {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+  }
+
+  .stripes {
+    top: -50px;
+    left: -80px;
+    width: 450px;
+  }
+
+  .stripe {
+    width: 450px;
+    height: 2px;
+    margin-bottom: 12px;
+  }
+
+  .center {
+    width: 210px;
+    height: 210px;
+  }
+
+  .polygon {
+
+  }
+
+  h1 {
+    font-size: 4vh;
+  }
+
+  #footer {
+    font-size: 2.5vh;
+  }
+}
