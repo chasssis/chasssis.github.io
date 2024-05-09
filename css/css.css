@@ -15,6 +15,13 @@ body {
   overflow: hidden;
   background-color: #eeeeee;
 }
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
 .frame {
   position: absolute;
   top: 50%;
@@ -29,6 +36,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  z-index: 50;
 }
 .stripes {
   position: relative;
@@ -38,7 +46,7 @@ body {
   transform: rotate(45deg);
 
   .stripe {
-    background: #353535;
+    background: #dbdbdb;
     width: 600px;
     height: 3px;
     margin-bottom: 16px;
@@ -90,30 +98,33 @@ body {
   }
 }
 h1 {
+  background-color: #eeeeeee0;
   color: #353535;
   font-size: 50px;
   font-weight: 500;
   text-align: center;
   position: fixed;
-  top: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  top: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  z-index: 1;
-  opacity: 75%;
+  z-index: 50;
 }
 #footer {
   position: fixed;
-  bottom: 1%;
+  bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 550;
   white-space: nowrap;
-  z-index: 2;
+  z-index: 50;
+  background-color: #eeeeeee0;
 }
 #footer a{
   text-decoration: none;
