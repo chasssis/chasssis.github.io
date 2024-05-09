@@ -1,119 +1,149 @@
-@import url('css.css');
-body{
-  padding: 0;
+@import url(css/css.css);
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+
 }
-#enter {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #eeeeee;
+  cursor: none;
+}
+.cursor-dot{
+   width: 5px;
+   height: 5px;
+   background-color: #181818;
+}
+.cursor-outline{
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
-  opacity: 1;
-  width: 100%;
-  height: 100vh;
-  cursor: pointer;
-  position: fixed;
-  text-align: center;
-  background-color: #000000;
-  transition: opacity 0.9s ease-in-out;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 0%, 0.75);
 }
-.begin {
+.cursor-dot,
+.cursor-outline{
   position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 500;
+  pointer-events: none;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 10px 13px 10px 0 rgba(0,0,0,0.3);
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+.stripes {
+  position: relative;
+  top: -67px;
+  left: -100px;
+  width: 600px;
+  transform: rotate(45deg);
+
+  .stripe {
+    background: #353535;
+    width: 600px;
+    height: 3px;
+    margin-bottom: 16px;
+  }
+}
+.center {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: purple;
-  position: absolute;
-  font-weight: normal;
-  font-size: 15px;
-  font-family: "Segoe UI", "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+  background: #353535;
+  border-radius: 3px;
+  box-shadow: 8px 10px 15px 0 rgba(0,0,0,0.3);
 }
-#app {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display:flex ;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to right, #000000, #2c002c);
-  background-size: auto;
-  background-position: center;
-  z-index: 1;
-}
-#links{
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+.polygon {
   position: absolute;
-  bottom: 0;
-  padding-bottom: 2em;
+  width: 160px;
+  height: 140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .light {
+    fill: #eee;
+    transition: all .5s ease-in-out;
+  }
+  .middle {
+    fill: #ccc;
+    transition: all .5s ease-in-out;
+  }
+  .dark {
+    fill: #aaa;
+    transition: all .5s ease-in-out;
+  }
+  &:hover {
+    .light {
+      fill: #aaa;
+    }
+    .middle {
+      fill: #eee;
+    }
+    .dark {
+      fill: #ccc;
+    }
+  }
+}
+h1 {
+  color: #353535;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  position: fixed;
+  top: 1%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
+  z-index: 1;
+  opacity: 75%;
 }
-img {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 3px;
-}
-img[title]::after {
-  content: attr(title);
-  background: black;
-  color: rgb(0, 0, 0);
-  padding: 4px 8px;
-  border-radius: 4px;
+#footer {
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 550;
   white-space: nowrap;
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
-}
-img[title]:hover::after {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s linear 0s, opacity 0.3s linear;
-}
-.tele{
-  box-shadow: 0 0 20px rgb(0, 0, 0);
-  padding: 2px;
-  background-color: rgba(128, 0, 128, 0.5);
-  border-radius: 50%;
-  margin-right: 15px;
-}
-pre{
-  position: absolute;
   z-index: 2;
 }
-
-#header{
-  color: purple;
-  font-size: 12px;
-  margin: 0 auto;
-  left: 50%;
-  display: block;
-  text-align: center;
-  transform: translate(-50%, -0%);
-  padding-top: 15px;
-}
-#card{
-  color: purple;
-  font-size: 2.5px;
-}
-
-@media (max-width: 550px) {
-  #header {
-    font-size: 6px;
-  }
-  img{
-    width: 70px;
-    height: 70px;
-  }
-  #card{
-    font-size: 2px;
-  }
-  body{
-    overflow:scroll;
-  }
+#footer a{
+  cursor: none;
+  text-decoration: none;
+  color: #353535;
 }

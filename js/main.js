@@ -1,13 +1,23 @@
-// Get the #enter div element
-const enterDiv = document.getElementById("enter");
+const stripesContainer = document.getElementById('stripes-container');
+const numberOfStripes = 29;
+const cursorDot = document.querySelector("[data-cursor-dot]");
+const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-// Add a click event listener to the #enter div
-enterDiv.addEventListener("click", function() {
-    // Set the opacity of the #enter div to 0
-    enterDiv.style.opacity = "0";
-
-    // Add a delay to hide the #enter div completely after the opacity transition is complete
-    setTimeout(() => {
-        enterDiv.style.display = "none";
-    }, 900); // Duration of 0.9s (900ms) matches the CSS transition duration
+window.addEventListener("mousemove", function(e) {
+    const posX = e.clientX;
+    const posY = e.clientY;
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+    //cursorOutline.style.left = `${posX}px`;
+    //cursorOutline.style.top = `${posY}px`;
+    cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+    }, {duration: 500, fill: "forwards" });
 });
+
+for (let i = 0; i < numberOfStripes; i++) {
+    const stripe = document.createElement('div');
+    stripe.className = 'stripe';
+    stripesContainer.appendChild(stripe);
+}
