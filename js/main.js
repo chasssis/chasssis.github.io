@@ -6,7 +6,7 @@ for (let i = 0; i < numberOfStripes; i++) {
     stripe.className = 'stripe';
     stripesContainer.appendChild(stripe);
 }
-
+//fuck this shit
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
