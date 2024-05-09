@@ -1,4 +1,4 @@
-@import url(/css.css);
+@import url(css/css.css);
 * {
   margin: 0;
   padding: 0;
@@ -14,33 +14,6 @@ body {
   width: 100%;
   overflow: hidden;
   background-color: #eeeeee;
-  cursor: none;
-}
-.cursor-dot{
-   width: 5px;
-   height: 5px;
-   background-color: #181818;
-}
-.cursor-outline{
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  pointer-events: none;
-  width: 30px;
-  height: 30px;
-  border: 2px solid hsla(0, 0%, 0%, 0.75);
-}
-.cursor-dot,
-.cursor-outline{
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  z-index: 500;
-  pointer-events: none;
 }
 .frame {
   position: absolute;
@@ -143,7 +116,6 @@ h1 {
   z-index: 2;
 }
 #footer a{
-  cursor: none;
   text-decoration: none;
   color: #353535;
 }
